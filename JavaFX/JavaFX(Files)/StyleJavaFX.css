@@ -1,0 +1,13 @@
+#paneBox{
+    -fx-background-color:lightblue;
+}
+#viewReceiptButton{
+    -fx-background-color:#40E0D0;
+    -fx-cursor:hand;
+}
+RadioButton{
+    -fx-cursor:hand;
+}
+TextField{
+    -fx-border-style:round;
+}

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <Pane fx:id="paneBox" prefHeight="466.0" prefWidth="654.0" stylesheets="@StyleJavaFX.css">
+         <children>
+            <Text layoutX="15.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Vaccination Center" underline="true">
+               <font>
+                  <Font name="Agency FB" size="48.0" />
+               </font>
+            </Text>
+            <Text layoutX="24.0" layoutY="101.0" strokeType="OUTSIDE" strokeWidth="0.0" text="First Name:">
+               <font>
+                  <Font name="Agency FB" size="18.0" />
+               </font>
+            </Text>
+            <Text layoutX="301.0" layoutY="103.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Last Name:">
+               <font>
+                  <Font name="Agency FB" size="18.0" />
+               </font>
+            </Text>
+            <TextField fx:id="fNameField" layoutX="92.0" layoutY="84.0" prefHeight="25.0" prefWidth="159.0" promptText="Enter your first name here" />
+            <TextField fx:id="lNameField" layoutX="372.0" layoutY="84.0" prefHeight="25.0" prefWidth="167.0" promptText="Enter your last name here" />
+            <Text layoutX="57.0" layoutY="154.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Age:">
+               <font>
+                  <Font name="Agency FB" size="18.0" />
+               </font>
+            </Text>
+            <TextField fx:id="ageField" layoutX="92.0" layoutY="138.0" promptText="Enter your age here" />
+            <Text layoutX="55.0" layoutY="202.0" strokeType="OUTSIDE" strokeWidth="0.0" text="City:">
+               <font>
+                  <Font name="Agency FB" size="18.0" />
+               </font>
+            </Text>
+            <TextField fx:id="cityField" layoutX="92.0" layoutY="184.0" promptText="Enter your city here" />
+            <Text layoutX="24.0" layoutY="254.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NIC or Passport Number:">
+               <font>
+                  <Font name="Agency FB" size="18.0" />
+               </font>
+            </Text>
+            <TextField fx:id="numberField" layoutX="169.0" layoutY="239.0" prefHeight="25.0" prefWidth="231.0" promptText="Enter your NIC or Passport Number here" />
+            <Text layoutX="36.0" layoutY="353.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Vaccination requested:">
+               <font>
+                  <Font name="Agency FB" size="18.0" />
+               </font>
+            </Text>
+            <RadioButton fx:id="radio1" layoutX="172.0" layoutY="333.0" mnemonicParsing="false" text="AstraZeneca">
+               <font>
+                  <Font name="Calibri" size="18.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="radio2" layoutX="302.0" layoutY="334.0" mnemonicParsing="false" text="Sinopharm">
+               <font>
+                  <Font name="Calibri" size="18.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="radio3" layoutX="430.0" layoutY="334.0" mnemonicParsing="false" text="Pfizer">
+               <font>
+                  <Font name="Calibri" size="18.0" />
+               </font>
+            </RadioButton>
+            <Button fx:id="viewReceiptButton" layoutX="396.0" layoutY="398.0" mnemonicParsing="false" onAction="#viewReceipt" prefHeight="57.0" prefWidth="184.0" stylesheets="@StyleJavaFX.css" text="Generate Receipt">
+               <font>
+                  <Font name="Agency FB" size="24.0" />
+               </font>
+            </Button>
+            <Text layoutX="81.0" layoutY="304.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Booth Number:">
+               <font>
+                  <Font name="Agency FB" size="18.0" />
+               </font>
+            </Text>
+            <TextField fx:id="boothNumField" layoutX="170.0" layoutY="282.0" promptText="Enter your booth number here" />
+         </children>
+      </Pane>
+   </children>
+</GridPane>
